@@ -11,7 +11,7 @@
       // Obtener los parámetros de la URL principal
       const urlParams = new URLSearchParams(window.location.search);
       
-      const list = urlParams.get('route') || 'home';
+      const route = urlParams.get('route') || 'home';
       const conference = "bienal24";
       const trabajo = urlParams.get('trabajo');
       const evaluador = urlParams.get('evaluador');

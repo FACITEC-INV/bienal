@@ -26,6 +26,12 @@
 
       console.log(document.getElementById('miIframe'))
 
+      window.addEventListener('pageshow', function(event) {
+        if (event.persisted) {
+          window.location.reload();  // Forzar recarga completa de la página
+        }
+      });
+
     </script>
 </body>
 </html>

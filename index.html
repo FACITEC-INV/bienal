@@ -23,6 +23,13 @@
       
       // Asignar la URL al iframe
       document.getElementById('miIframe').src = iframeSrc;
+
+      window.addEventListener('pageshow', function(event) {
+        if (event.persisted) {  // Detecta si se volvió a cargar desde el caché
+          var iframe = document.getElementById('miIframe');
+          iframe.src = iframe.src;  // Fuerza la recarga del iframe
+        }
+      });
     </script>
 </body>
 </html>

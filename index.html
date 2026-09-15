@@ -12,14 +12,14 @@
       const urlParams = new URLSearchParams(window.location.search);
       
       const route = urlParams.get('route') || 'home';
-      const conference = "bienal24";
+      const conference = "bienal";
       const trabajo = urlParams.get('trabajo');
       const evaluador = urlParams.get('evaluador');
       const category = urlParams.get('category');
       
     
       // Construir la URL para el iframe con los parámetros
-      const iframeSrc = `https://script.google.com/macros/s/AKfycbxlCfeg3LXvVyjWOK5AcEuTrtTRBQvEBdw_wDPgowrYf1fu86mV766cTKtw63virRWC/exec?route=${route}&conference=${conference}&category=${category}&trabajo=${trabajo}&evaluador=${evaluador}`;
+      const iframeSrc = `https://script.google.com/macros/s/AKfycbwXEF__9WlBnOatEqcI-EbCvYelv_nDh87zWSaejp7b0eJGdHA9-zP3VPbKVyDayhq-/exec?route=${route}&conference=${conference}&category=${category}&trabajo=${trabajo}&evaluador=${evaluador}`;
       
       // Asignar la URL al iframe
       document.getElementById('miIframe').src = iframeSrc;

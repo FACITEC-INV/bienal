@@ -16,10 +16,11 @@
       const trabajo = urlParams.get('trabajo');
       const evaluador = urlParams.get('evaluador');
       const category = urlParams.get('category');
+      const subcat = urlParams.get('subcat') || '';;
       
     
       // Construir la URL para el iframe con los parámetros
-      const iframeSrc = `https://script.google.com/macros/s/AKfycbzqccqfJ0WEIyub8QiGvu9EkVpLwz65SADfLvSacRJNnuJFOzcE83Ey3G7eZ7FlwGIz/exec?route=${route}&conference=${conference}&category=${category}&trabajo=${trabajo}&evaluador=${evaluador}`;
+      const iframeSrc = `https://script.google.com/macros/s/AKfycbzi2eaM_uT6syGZR0x536Tr_IYX7uvLXYNaQAz5C-2LAKi3_9ibCh2F1EjnIkWj4FJl/exec?route=${route}&conference=${conference}&category=${category}&subcat=${subcat}&trabajo=${trabajo}&evaluador=${evaluador}`;
       
       // Asignar la URL al iframe
       document.getElementById('miIframe').src = iframeSrc;
